@@ -64,8 +64,13 @@ alert(`Вы можете купить ${numberOfChoco} шоколадки(ок) 
 // 9. Запросите у пользователя трехзначное число и выведите его задом наперед.
 //Для решения задачи вам понадобится оператор % (остаток от деления).
 
-let inputNumber = prompt('Введите трехзначное число');
-let outputDigit1 = inputNumber%10;
-let outputDigit2 = parseInt(inputNumber/10%10);
-let outputDigit3 = parseInt(inputNumber/100);
-alert(String(outputDigit1) + outputDigit2 + outputDigit3);
+let inputNum = prompt('Введите трехзначное число');
+let digit = 0;
+let rev = 0;
+    for (let i=0; i<3; i++){
+        digit = inputNum%10;
+        rev =rev*10+digit;
+        inputNum = (inputNum-digit)/10;
+    }
+
+alert(rev);
