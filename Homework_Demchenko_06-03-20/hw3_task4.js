@@ -1,4 +1,4 @@
-let inStr = prompt('Введите строку');
+let inStr = prompt('Введите строку', 'is2 Thi1s T4est 3a');
 let refinedStr = '';
 let orderArr = [];
 
