@@ -1,11 +1,12 @@
 function twoOldest (arr){
-    let oldestArr = [];
+    //let oldestArr = [];
 
     arr.sort(function(a, b) {return b - a});
-    oldestArr.push(arr[1]);
-    oldestArr.push(arr[0]);
+    //oldestArr.push(arr[1]);
+    //oldestArr.push(arr[0]);
 
-    return oldestArr;
+    //return oldestArr;
+    return arr.slice(-2);
 }
 
 //создаем пустой массив исходных данных и переменную с кол-вом эл-тов в нем
