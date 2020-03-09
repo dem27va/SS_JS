@@ -20,7 +20,7 @@ for (let i = 0; i < roomsArr.length; i++){
                 break;
 
             } else {                            
-                iTake.push(0);
+                iTake.push(0); //ничего не берем, если свободных стульев нет
             }  
         
 }
