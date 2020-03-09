@@ -27,7 +27,7 @@ for (let i = 0; i < roomsArr.length; i++){
 
 if (need > 0){
     alert('Недостаточно стульев');
-    console.log(`NOT enough. We have ${8-need} chairs, need ${need}`);
+    console.log(`Недостаточно. Есть ${8-need} стульев, надо ${need}`);
 }
 
 //console.log(iTake);
