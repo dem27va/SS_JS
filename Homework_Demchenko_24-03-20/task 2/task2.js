@@ -49,6 +49,7 @@ function dismissTile() {
             counter.textContent = "Отщелкано плиток: " + c;
 
             if (running == false && screenCheck(tileChecklist)) { //если процесс заполнения поля завершен И на поле остались пустые клетки - запускаем функцию заполнения
+                lable.classList.remove('complete');
                 timer = setInterval(paintedTiles, cooldown);
             }
         });
