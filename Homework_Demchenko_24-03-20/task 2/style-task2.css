@@ -1,0 +1,22 @@
+.screen {
+    width: 600px;
+    height: 600px;
+    border: solid black 5px;
+    display: grid;
+    grid-template-columns:  repeat(10, 1fr);
+    position: relative;
+};
+
+#lable {
+    width: 600px;
+}
+
+.tileOn {
+    background-color: rgb(35, 148, 241);
+    border: 1px solid black;
+}
+
+.complete {
+    background-color: rgb(48, 241, 10);
+    border-bottom: 1px solid black;
+}
