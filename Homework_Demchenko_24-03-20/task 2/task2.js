@@ -31,6 +31,7 @@ function paintedTiles() {
         lable.classList.add('complete');
         running = false;
     }
+console.log(screenCheck(tileChecklist));
 }
 
 let timer = setInterval(paintedTiles, cooldown); //заполняем поле плитками
