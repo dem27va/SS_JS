@@ -27,6 +27,9 @@ class RefillableMarker extends Marker {
     refill() {
         let toRefill = prompt('Сколько чернил (в %) вы хотели бы заправить?', 5);
         this.inkValue += Number(toRefill);
+         if (this.inkValue > 100) {
+            this.inkValue = 100;
+        } 
         console.log(`Текущий уровень чернил: ${this.inkValue}%`);
     }
 }
